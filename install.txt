@@ -1,0 +1,4 @@
+npm i --save-dev apache-server-configs babel-core babel-preset-es2015 babel-preset-stage-0 browser-sync del eslint-config-google gulp gulp-autoprefixer gulp-babel gulp-cache gulp-concat gulp-cssnano gulp-eslint gulp-htmlmin gulp-if gulp-imagemin gulp-load-plugins gulp-newer gulp-sass gulp-size gulp-sourcemaps gulp-uglify gulp-useref psi run-sequence
+
+NOT INSTALLED
+sw-toolbox sw-precache
