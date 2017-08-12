@@ -51,7 +51,7 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid $mainOrange;
+    border-bottom: 1px solid $mainBlue;
     font-size: 0.9rem;
     font-weight: 300;
     line-height: 2;
@@ -65,7 +65,7 @@
       border-top: none;
       border-right: none;
       border-left: none;
-      border-bottom: 1px solid $mainOrange;
+      border-bottom: 1px solid $mainBlue;
       font-size: 0.9rem;
       font-weight: 300;
       text-align: left;
@@ -94,8 +94,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $mainOrange;
+      color: $mainBlue;
     }
   }
-
 }

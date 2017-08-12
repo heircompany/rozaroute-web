@@ -1,6 +1,51 @@
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 
+.icon--rozaroute {
+  background-image: url('/images/icons/rozaroute.svg');
+  width: 143.07px;
+  height: 52.4px;
+  background-position: 0 0;
+}
+
+.icon--workflow {
+  background-image: url('/images/icons/workflow.svg');
+  width: 50px;
+  height: 50px;
+}
+
+.icon--pricing {
+  background-image: url('/images/icons/pricing.svg');
+  width: 50px;
+  height: 50px;
+  transform: scale(1.5);
+}
+
+.icon--profile {
+  background-image: url('/images/icons/profile.svg');
+  width: 50px;
+  height: 50px;
+}
+
+.icon--features {
+  background-image: url('/images/icons/features.svg');
+  width: 50px;
+  height: 50px;
+  transform: scale(1.5);
+}
+
+.icon--analytics {
+  background-image: url('/images/icons/analytics.svg');
+  width: 50px;
+  height: 50px;
+}
+
+.icon--activity {
+  background-image: url('/images/icons/activity.svg');
+  width: 50px;
+  height: 50px;
+}
+
 .icon {
   background-image: url('/images/sprites/sprite-6fa27e10.svg');
 }

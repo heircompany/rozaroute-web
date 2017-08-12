@@ -1,7 +1,7 @@
 .headline {
   font-size: 1.9rem;
   font-weight: 300;
-  color: $mainBlue;
+  color: $mainGrey;
 
   @include atSmall {
     font-size: 2.875rem;
@@ -13,6 +13,10 @@
 
   &--orange {
     color: $mainOrange;
+  }
+
+  &--blue {
+    color: $mainBlue;
   }
 
   &--small {

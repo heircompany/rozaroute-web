@@ -15,9 +15,17 @@
     color: $mainBlue;
   }
 
+  &--white {
+    color: #fff;
+  }
+
   &--less-margin {
     margin-bottom: 1.3rem;
     margin-top: 0;
+  }
+
+  &--modal {
+    font-size: 2rem;
   }
 
   &__icon {

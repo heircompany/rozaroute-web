@@ -36,7 +36,7 @@
   }
 
   a {
-    color: #777;
+    color: #fff;
     font-weight: 300;
     text-decoration: none;
     display: block;
@@ -50,7 +50,8 @@
       background-color: transparent;
 
       &.is-current-link {
-        color: $mainOrange;
+        font-weight: 500;
+        color: $mainGrey;
       }
     }
   }

@@ -21,17 +21,25 @@
     }
   }
 
-  &--blue {
-    background-color: $mainBlue;
-    color: #fff;
+  &--black {
+    background-color: black;
   }
 
-  &--why-us {
-    background-color: #e0e6ef;
+  &--blue {
+    background-color: $mainBlue;
+  }
+
+  &--grey {
+    background-color: $mainGrey;
+    color: white;
+  }
+
+  &--pricing {
+    background-color: rgba($mainGrey, .1);
 
     @include atLarge {
       &.lazyloaded {
-        background: url('/images/why-us-bg.jpg') top center no-repeat;
+        background: url('/images/pricing-bg.png') top center no-repeat;
         background-size: cover;
       }
     }
