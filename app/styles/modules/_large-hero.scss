@@ -1,6 +1,7 @@
 .large-hero {
-  border-bottom: 10px solid $mainGrey;
+  // border-bottom: 10px solid $mainGrey;
   position: relative;
+  padding-top: 7rem;
 
   &__image {
     display: block;
@@ -21,8 +22,8 @@
   }
 
   &__title {
-    font-weight: 500;
-    color: #ffffff;
+    font-weight: 300;
+    color: $mainGrey;
     margin: 0;
     font-size: 2.4rem;
 
@@ -32,8 +33,8 @@
   }
 
   &__subtitle {
-    font-weight: 400;
-    color: #ffffff;
+    font-weight: 300;
+    color: $mainGrey;
     font-size: 1.5rem;
     margin: 0;
 
@@ -43,7 +44,7 @@
   }
 
   &__description {
-    color: #fff;
+    color: $mainBlue;
     font-size: 1.1rem;
     font-weight: 300;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);

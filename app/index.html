@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="rozaroute commercial cleaning mobile app.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RozaRoute</title>
 
     <!-- Disable tap highlight on IE -->
@@ -12,21 +12,6 @@
 
     <!-- Web Application Manifest -->
     <link rel="manifest" href="manifest.json">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="RozaRoute">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="RozaRoute">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#000000">
 
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#000000">
@@ -71,13 +56,7 @@
 
     <main>
       <section class="large-hero">
-
-        <picture>
-          <source srcset="images/hero--large-i.jpg 1920w, images/hero--large-hi-dpi-i.jpg 3840w" media="(min-width: 1380px)">
-          <source srcset="images/hero--medium-i.jpg 1380w, images/hero--medium-hi-dpi-i.jpg 2760w" media="(min-width: 990px)">
-          <source srcset="images/hero--small-i.jpg 990w, images/hero--small-hi-dpi-i.jpg 1980w" media="(min-width: 640px)">
-          <img srcset="images/hero--smaller-i.jpg 640w, images/hero--smaller-hi-dpi-i.jpg 1280w" alt="RozaRoute App" class="large-hero__image">
-        </picture>
+        <img class="large-hero__image" src="images/rr-hero--large.png">
 
         <div class="large-hero__text-content">
           <div class="wrapper">
@@ -96,16 +75,12 @@
             RozaRoute helps commercial cleaning companies of any size monitor and streamline the work of their teams, through <strong>real time data on the job</strong>, while providing guidance and training.</h3>
 
           <div class="wrapper wrapper--medium wrapper--b-margin">
-            <img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="images/first-trip-low-res-i.jpg 565w, images/first-trip-i.jpg 976w, images/first-trip-hi-dpi-i.jpg 1952w" alt="">
+            <img src="images/rozaladoteam.jpg">
           </div>
 
           <div class="row row--gutters">
             <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
-              <picture>
-                <source sizes="404px" data-srcset="images/our-start-i.jpg 404w, images/our-start-hi-dpi-i.jpg 808w" media="(min-width: 1020px)">
-                <source sizes="320px" data-srcset="images/our-start-portrait-i.jpg 382w, images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
-                <img class="lazyload" data-srcset="images/our-start-landscape-i.jpg 800w, images/our-start-landscape-hi-dpi-i.jpg 1600w" alt="">
-              </picture>
+              <img src="images/screen.png">
             </div>
             <div class="row__medium-8 row__medium-8--smaller">
               <div class="generic-content-container">
@@ -167,7 +142,7 @@
             <div class="row__large-4">
               <div class="pricing">
                 <div class="pricing__photo">
-                  <img class="lazyload" sizes="160px" data-srcset="images/testimonial-cat-i.jpg 160w, images/testimonial-cat-hi-dpi-i.jpg 320w" alt="Standard Plan">
+                  <img src="images/standard-small.png" alt="Standard Plan">
                 </div>
                 <h3 class="pricing__title">Standard</h3>
                 <h4 class="pricing__subtitle">$99 / Month</h4>
@@ -182,7 +157,7 @@
             <div class="row__large-4">
               <div class="pricing">
                 <div class="pricing__photo">
-                  <img class="lazyload" sizes="160px" data-srcset="images/testimonial-jane-i.jpg 160w, images/testimonial-jane-hi-dpi-i.jpg 320w" alt="Professional Plan">
+                  <img src="images/professional-small.png" alt="Professional Plan">
                 </div>
                 <h3 class="pricing__title">Professional</h3>
                 <h4 class="pricing__subtitle">$249 / Month</h4>
@@ -197,7 +172,7 @@
             <div class="row__large-4">
               <div class="pricing pricing--last">
                 <div class="pricing__photo">
-                  <img class="lazyload" sizes="160px" data-srcset="images/testimonial-john-i.jpg 160w, images/testimonial-john-hi-dpi-i.jpg 320w" alt="Enterprise Plan">
+                  <img src="images/enterprise-small.png" alt="Enterprise Plan">
                 </div>
                 <h3 class="pricing__title">Enterprise</h3>
                 <h4 class="pricing__subtitle">$499 / Month</h4>
@@ -257,7 +232,15 @@
       <div class="modal__close">X</div>
     </div>
 
-    <!-- build:js scripts/main.min.js -->
+<!-- Firebase -->
+    <script src="/__/firebase/4.2.0/firebase-app.js"></script>
+    <script src="/__/firebase/4.2.0/firebase-auth.js"></script>
+    <script src="/__/firebase/4.2.0/firebase-database.js"></script>
+    <script src="/__/firebase/4.2.0/firebase-messaging.js"></script>
+    <script src="/__/firebase/4.2.0/firebase-storage.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <!-- build:js scripts/bundle.js -->
     <script src="scripts/bundle.js"></script>
     <!-- endbuild -->
 
