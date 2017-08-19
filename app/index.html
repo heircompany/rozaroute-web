@@ -62,8 +62,8 @@
           <div class="wrapper">
             <h1 class="large-hero__title">Master the</h1>
             <h2 class="large-hero__subtitle">Cleaner's Workflow.</h2>
-            <p class="large-hero__description">A data driven B2B solution for the cleaning service industry.</p>
-            <p><a href="#" class="btn btn--large open-modal">Request Early Access</a></p>
+            <p class="large-hero__description">A data driven solution for the cleaning service industry.</p>
+            <p><a href="#" class="btn btn--large-hero open-modal">Request Early Access</a></p>
           </div>
         </div>
       </section>
@@ -257,9 +257,17 @@
   a.async = 1;
   a.src = g;
   m.parentNode.insertBefore(a, m);
-})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-ga('create', 'UA-XXXXX-X', 'auto');
+})(
+  window,
+  document,
+  'script',
+  'https://www.google-analytics.com/analytics.js',
+  'ga'
+);
+
+ga('create', 'UA-104735334-1', 'auto');
 ga('send', 'pageview');
+ga('set', 'userId', {{USER_ID}}); // Set the user ID using signed-in user_id.
 </script>
   </body>
 </html>

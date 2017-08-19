@@ -9,6 +9,6 @@ import Modal from './modules/Modal';
 
 const mobileMenu = new MobileMenu();
 new RevealOnScroll($('.feature-item'), '85%');
-new RevealOnScroll($('.why-us'), '60%');
+new RevealOnScroll($('.pricing'), '60%');
 const stickyHeader = new StickyHeader();
 const modal = new Modal();

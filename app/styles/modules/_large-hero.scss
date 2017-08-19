@@ -48,12 +48,13 @@
     font-size: 1.1rem;
     font-weight: 300;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
-    max-width: 30rem;
+    max-width: 11rem;
     margin-left: auto;
     margin-right: 0;
 
     @include atSmall {
       font-size: 1.875rem;
+      max-width: 30rem;
     }
   }
 }
