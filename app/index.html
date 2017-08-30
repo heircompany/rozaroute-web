@@ -56,7 +56,13 @@
 
     <main>
       <section class="large-hero">
-        <img class="large-hero__image" src="images/rr-hero--large.png">
+
+        <picture>
+          <source srcset="images/rr-hero--large.png 1920w" media="(min-width: 1380px)">
+          <source srcset="images/rr-hero--medium.png 1380w" media="(min-width: 990px)">
+          <source srcset="images/rr-hero--small.png 990w" media="(min-width: 640px)">
+          <img srcset="images/rr-hero--smaller.png 640w" alt="RozaRoute App on phone and smartwatch screens" class="large-hero__image">
+        </picture>
 
         <div class="large-hero__text-content">
           <div class="wrapper">
@@ -75,12 +81,18 @@
             RozaRoute helps commercial cleaning companies of any size monitor and streamline the work of their teams, through <strong>real time data on the job</strong>, while providing guidance and training.</h3>
 
           <div class="wrapper wrapper--medium wrapper--b-margin">
-            <img src="images/rozaladoteam.jpg">
+            <img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="images/rozaladoteam-low-res.png 565w, images/rozaladoteam.png 976w, images/rozaladoteam-hi-dpi.png 1952w" alt="Rozalado Services Team">
           </div>
 
           <div class="row row--gutters">
             <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
-              <img src="images/screen.png">
+
+              <picture>
+                <source sizes="404px" data-srcset="images/screen.png 404w, images/screen-hi-dpi.png 808w" media="(min-width: 1020px)">
+                <source sizes="320px" data-srcset="images/screen-portrait.png 382w, images/screen-portrait-hi-dpi.png 764w" media="(min-width: 800px)">
+                <img class="lazyload" data-srcset="images/screen-landscape-small 565w, images/screen-landscape.png 800w, images/screen-landscape-hi-dpi.png 1600w" alt="RozaRoute app screen">
+              </picture>
+
             </div>
             <div class="row__medium-8 row__medium-8--smaller">
               <div class="generic-content-container">
@@ -142,6 +154,7 @@
             <div class="row__large-4">
               <div class="pricing">
                 <div class="pricing__photo">
+                  <!-- <img class="lazyload" sizes="160px" data-srcset="images/standard-small.png 160w, images/standard.png 320w" alt="Standard Plan"> -->
                   <img src="images/standard-small.png" alt="Standard Plan">
                 </div>
                 <h3 class="pricing__title">Standard</h3>
@@ -157,6 +170,7 @@
             <div class="row__large-4">
               <div class="pricing">
                 <div class="pricing__photo">
+                  <!-- <img class="lazyload" sizes="160px" data-srcset="images/professional-small.png 160w, images/professional.png 320w" alt="Professional Plan"> -->
                   <img src="images/professional-small.png" alt="Professional Plan">
                 </div>
                 <h3 class="pricing__title">Professional</h3>
@@ -172,6 +186,7 @@
             <div class="row__large-4">
               <div class="pricing pricing--last">
                 <div class="pricing__photo">
+                  <!-- <img class="lazyload" sizes="160px" data-srcset="images/enterprise-small.png 160w, images/enterprise.png 320w" alt="Enterprise Plan"> -->
                   <img src="images/enterprise-small.png" alt="Enterprise Plan">
                 </div>
                 <h3 class="pricing__title">Enterprise</h3>
@@ -252,7 +267,8 @@
     i[r] ||
     function() {
       (i[r].q = i[r].q || []).push(arguments);
-    }), (i[r].l = 1 * new Date());
+    }),
+    (i[r].l = 1 * new Date());
   (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
   a.async = 1;
   a.src = g;
@@ -267,7 +283,6 @@
 
 ga('create', 'UA-104735334-1', 'auto');
 ga('send', 'pageview');
-ga('set', 'userId', {{USER_ID}}); // Set the user ID using signed-in user_id.
 </script>
   </body>
 </html>

@@ -16,5 +16,10 @@ img {
 }
 
 a {
-  color: $mainOrange;
+  color: $mainBlue;
+}
+
+ul li ul {
+  display: none;
+  position: absolute;
 }
