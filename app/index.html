@@ -35,20 +35,30 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '478955832480014'), {
-        em: contact-email,
-        ph: contact-phone,
-      });
-      fbq('track', 'PageView');
-    </script>
+    !(function(f, b, e, v, n, t, s) {
+  if (f.fbq) return;
+  n = f.fbq = function() {
+    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+  };
+  if (!f._fbq) f._fbq = n;
+  n.push = n;
+  n.loaded = !0;
+  n.version = '2.0';
+  n.queue = [];
+  t = b.createElement(e);
+  t.async = !0;
+  t.src = v;
+  s = b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t, s);
+})(
+  window,
+  document,
+  'script',
+  'https://connect.facebook.net/en_US/fbevents.js'
+);
+fbq('init', '478955832480014');
+fbq('track', 'PageView');
+</script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=478955832480014&ev=PageView&noscript=1"
     /></noscript>
@@ -80,7 +90,6 @@
 
     <main>
       <section class="large-hero">
-
         <picture>
           <source srcset="images/rr-hero--large.png 1920w" media="(min-width: 1380px)">
           <source srcset="images/rr-hero--medium.png 1380w" media="(min-width: 990px)">
@@ -110,18 +119,16 @@
 
           <div class="row row--gutters">
             <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
-
               <picture>
                 <source sizes="404px" data-srcset="images/screen.png 404w, images/screen-hi-dpi.png 808w" media="(min-width: 1020px)">
                 <source sizes="320px" data-srcset="images/screen-portrait.png 382w, images/screen-portrait-hi-dpi.png 764w" media="(min-width: 800px)">
                 <img class="lazyload" data-srcset="images/screen-landscape-small 565w, images/screen-landscape.png 800w, images/screen-landscape-hi-dpi.png 1600w" alt="RozaRoute app screen">
               </picture>
-
             </div>
+
             <div class="row__medium-8 row__medium-8--smaller">
               <div class="generic-content-container">
                 <h2 class="headline  headline--blue headline--no-t-margin">Our Mission: To Change the Perception of Cleaners and the Cleaning Industry.</h2>
-
                 <p>The RozaRoute app and smartwatch app provides real time analytics regarding the team’s performance by gathering <strong>real time data and feedback.</strong></p>
                 <p>It also allows for workflow guidance while an employee is on the job, and assists in profile building for better service in the future by teams with identities. RozaRoute helps you <strong>give cleaners the support they need to perform efficiently.</strong></p>
               </div>
@@ -133,11 +140,8 @@
       <section id="features" class="page-section page-section--black" data-matching-link="#features-link">
         <div class="wrapper">
           <h2 class="section-title section-title--white"><span class="icon--features section-title__icon"></span> Core <strong>Features</strong></h2>
-
           <div class="row row--gutters-large generic-content-container">
-
             <div class="row__medium-6">
-
               <div class="feature-item">
                 <span class="icon--workflow feature-item__icon"></span>
                 <h3 class="feature-item__title">Workflow Builder</h3>
@@ -149,7 +153,6 @@
                 <h3 class="feature-item__title">Real Time Data On the Job</h3>
                 <p>With RozaRoute’s one touch task completions, collecting real time data on site about your team’s performance is easy for you and your cleaners. Dive into the details and uncover important insights from your entire business like never before.</p>
               </div>
-
             </div>
 
             <div class="row__medium-6">
@@ -163,17 +166,15 @@
                 <span class="icon--profile feature-item__icon"></span>
                 <h3 class="feature-item__title">Cleaner Profiles</h3>
                 <p>Transform your company culture and empower your teams with the data-driven recognition they deserve. Cleaner Profiles put a face to hard work and provide a place to showcase the unique talents and accomplishments of employees.</p>
+              </div>
             </div>
-
           </div>
-
         </div>
       </section>
 
       <section id="pricing" class="page-section page-section--no-b-padding-until-large page-section--pricing lazyload" data-matching-link="#pricing-link">
         <div class="wrapper wrapper--no-padding-until-large">
           <h2 class="section-title section-title--blue"><span class="icon--pricing section-title__icon"></span> Choose <strong>Your </strong>Plan</h2>
-
           <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container">
             <div class="row__large-4">
               <div class="pricing">
@@ -237,36 +238,46 @@
     <div class="modal">
       <div class="modal__inner">
         <h2 class="section-title section-title--blue section-title--less-margin section-title--modal">Become a <strong>Beta Tester</strong></h2>
-      <div class="wrapper wrapper--narrow">
-        <p class="modal__description">Looking to implement RozaRoute? Apply below to join our early access community. We'll reach out when we are ready to launch the program.</p>
-        <form id="contact-form" action="#">
-          <fieldset class="modal__field">
-            <label class="modal__label" for="contact-name">Name</label>
-            <input id="contact-name" name="name" type="text" class="modal__input">
-          </fieldset>
-          <fieldset class="modal__field">
-            <label class="modal__label" for="contact-company">Company</label>
-            <input id="contact-company" name="company" type="text" class="modal__input">
-          </fieldset>
-          <fieldset class="modal__field">
-            <label class="modal__label" for="contact-email">Email</label>
-            <input id="contact-email" name="email" type="email" class="modal__input">
-          </fieldset>
-          <fieldset class="modal__field">
-            <label class="modal__label" for="contact-phone">Phone</label>
-            <input id="contact-phone" name="phone" type="tel" class="modal__input">
-          </fieldset>
-          <button id="contact-submit" type="submit" class="btn btn--large btn--modal">Apply</button>
+        <div class="wrapper wrapper--narrow">
+          <p class="modal__description">Looking to implement RozaRoute? Apply below to join our early access community. We'll reach out when we are ready to launch the program.</p>
+          <form id="contact-form" action="#">
+            <fieldset class="modal__field">
+              <label class="modal__label" for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" class="modal__input">
+            </fieldset>
+            <fieldset class="modal__field">
+              <label class="modal__label" for="contact-company">Company</label>
+              <input id="contact-company" name="company" type="text" class="modal__input">
+            </fieldset>
+            <fieldset class="modal__field">
+              <label class="modal__label" for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" class="modal__input">
+            </fieldset>
+            <fieldset class="modal__field">
+              <label class="modal__label" for="contact-phone">Phone</label>
+              <input id="contact-phone" name="phone" type="tel" class="modal__input">
+            </fieldset>
+            <button id="contact-submit" type="submit" class="btn btn--large btn--modal">Apply</button>
           <script type="text/javascript">
-          document.getElementById('contact-submit').onclick = function() {
-  fbq('track', 'Lead', {
-    value: 100.0,
-    currency: 'USD'
-  });
-};
+          var submit = document.getElementById('contact-submit');
+submit.addEventListener(
+  'click',
+  function() {
+    fbq('track', 'Lead', {
+      content_name: 'RozaRoute Beta',
+      content_type: 'product',
+      content_ids: ['1234'],
+      value: 100.0,
+      currency: 'USD',
+      userAgent: navigator.userAgent,
+      language: navigator.language
+    });
+  },
+  false
+);
 </script>
-        </form>
-      </div>
+          </form>
+        </div>
       </div>
       <div class="modal__close">X</div>
     </div>
