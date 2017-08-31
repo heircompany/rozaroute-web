@@ -6,3 +6,6 @@ app.yaml
 .firebaserc
 database.rules.json
 firebase.json
+
+seo.html
+tracking.html

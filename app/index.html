@@ -29,6 +29,30 @@
 
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Google Surveys -->
+    <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=tyimpsitfsxcanmjo6uwnxbmpa"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '478955832480014'), {
+        em: contact-email,
+        ph: contact-phone,
+      });
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=478955832480014&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <header class="site-header">
@@ -259,7 +283,48 @@
     <script src="scripts/bundle.js"></script>
     <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <!-- Twitter universal website tag code -->
+    <script>
+    !(function(e, t, n, s, u, a) {
+  e.twq ||
+    ((s = e.twq = function() {
+      s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+    }),
+    (s.version = '1.1'),
+    (s.queue = []),
+    (u = t.createElement(n)),
+    (u.async = !0),
+    (u.src = '//static.ads-twitter.com/uwt.js'),
+    (a = t.getElementsByTagName(n)[0]),
+    a.parentNode.insertBefore(u, a));
+})(window, document, 'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init', 'ny29v');
+twq('track', 'PageView');
+</script>
+    <!-- End Twitter universal website tag code -->
+
+    <!-- Google Optimize -->
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>
+    (function(a, s, y, n, c, h, i, d, e) {
+  s.className += ' ' + y;
+  h.start = 1 * new Date();
+  h.end = i = function() {
+    s.className = s.className.replace(RegExp(' ?' + y), '');
+  };
+  (a[n] = a[n] || []).hide = h;
+  setTimeout(function() {
+    i();
+    h.end = null;
+  }, c);
+  h.timeout = c;
+})(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+  'GTM-MVDT452': true
+});
+</script>
+
+    <!-- Google Analytics -->
     <script>
     (function(i, s, o, g, r, a, m) {
   i['GoogleAnalyticsObject'] = r;
@@ -280,8 +345,8 @@
   'https://www.google-analytics.com/analytics.js',
   'ga'
 );
-
 ga('create', 'UA-104735334-1', 'auto');
+ga('require', 'GTM-MVDT452');
 ga('send', 'pageview');
 </script>
   </body>
